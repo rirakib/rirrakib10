@@ -38,14 +38,14 @@
     <header id="header" class="fixed-top">
         <div class="container-fluid d-flex justify-content-between align-items-center">
 
-            {{-- <h1 class="logo me-auto me-lg-0"><a href="index.html">rirrakib.</a></h1> --}}
+            <h1 class="logo me-auto me-lg-0"><a href="index.html">logo</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
-             <a href="index.html" class="logo"><img src="{{asset('frontend/assets/img/favicon.png')}}" alt="" class="img-fluid"></a>
+             {{-- <a href="index.html" class="logo"><img src="{{asset('frontend/assets/img/favicon.png')}}" alt="" class="img-fluid"></a> --}}
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="{{route('home')}}">Home</a></li>
+                    <li><a href="{{route('about')}}">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -55,10 +55,10 @@
             </nav><!-- .navbar -->
 
             <div class="header-social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                <a href="https://github.com/rirakib" target="_blank" class="twitter"><i class="bi bi-github"></i></a>
+                <a href="https://www.facebook.com/rir12rakib/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/rirrakib/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/md-rakibul-islam-6a1b071b8/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
             </div>
 
         </div>
