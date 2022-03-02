@@ -1,1 +1,4 @@
-<h1>Home Page</h1>
+@extends('layout.frontend')
+@section('frontend_content')
+
+@endsection
