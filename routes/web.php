@@ -3,7 +3,9 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ServiceController;
@@ -29,3 +31,6 @@ Route::get('/service',[ServiceController::class,'service'])->name('service');
 Route::get('/blog',[BlogController::class,'blog'])->name('blog');
 Route::get('/projects',[ProjectController::class,'project'])->name('project');
 Route::get('/contact',[ContactController::class,'contact'])->name('contact');
+
+Route::get('rirrakib/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
+Route::get('rirrakib/login',[LoginController::class,'login'])->name('login');
