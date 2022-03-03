@@ -108,13 +108,7 @@
                             aria-valuemax="100"></div>
                     </div>
                 </div>
-                <div class="progress">
-                    <span class="skill">Vue js <i class="val">55%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                            aria-valuemax="100"></div>
-                    </div>
-                </div>
+                
 
                 <div class="progress">
                     <span class="skill">Flutter <i class="val">50%</i></span>
