@@ -18,7 +18,7 @@
                     <img src="{{asset('frontend/assets/img/about.jpg')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content">
-                    <h3>Web Developer &amp; UI/UX Designer</h3>
+                    <h3>Web Developer &amp; Web Designer</h3>
                     <p class="fst-italic">
                         Asslamualaykum, I'm Md. Rakibul Islam. I'm a fullstack developer.
                     </p>
@@ -35,7 +35,7 @@
                             <ul>
                                 <li><i class="bi bi-rounded-right"></i> <strong>Age:</strong> 23</li>
                                 <li><i class="bi bi-rounded-right"></i> <strong>Degree:</strong> Honours (2018-2019)</li>
-                                <li><i class="bi bi-rounded-right"></i> <strong>PhEmailone:</strong> rirrakib10@gmail.com
+                                <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> rirrakib10@gmail.com
                                 </li>
                                 <li><i class="bi bi-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                             </ul>

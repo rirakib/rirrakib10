@@ -46,7 +46,7 @@
                 <ul>
                     <li><a href="{{route('home')}}">Home</a></li>
                     <li><a href="{{route('about')}}">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="{{route('resume')}}">Resume</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
