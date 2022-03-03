@@ -47,9 +47,10 @@
                     <li><a href="{{route('home')}}">Home</a></li>
                     <li><a href="{{route('about')}}">About</a></li>
                     <li><a href="{{route('resume')}}">Resume</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="{{route('service')}}">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
