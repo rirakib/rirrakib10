@@ -29,7 +29,7 @@
     <!-- Template Main CSS File -->
     <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
 
-
+    
 </head>
 
 <body>
@@ -44,13 +44,13 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a href="{{route('home')}}">Home</a></li>
-                    <li><a href="{{route('about')}}">About</a></li>
-                    <li><a href="{{route('resume')}}">Resume</a></li>
-                    <li><a href="{{route('service')}}">Services</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Project</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="{{route('home')}}" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
+                    <li><a href="{{route('about')}}" class="{{ request()->is('about') ? 'active' : '' }}">About</a></li>
+                    <li><a href="{{route('resume')}}" class="{{ request()->is('resume') ? 'active' : '' }}">Resume</a></li>
+                    <li><a href="{{route('service')}}" class="{{ request()->is('service') ? 'active' : '' }}">Services</a></li>
+                    <li><a href="{{route('blog')}}" class="{{ request()->is('blog') ? 'active' : '' }}">Blog</a></li>
+                    <li><a href="{{route('project')}}" class="{{ request()->is('projects') ? 'active' : '' }}">Project</a></li>
+                    <li><a href="{{route('contact')}}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

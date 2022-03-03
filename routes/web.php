@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
@@ -23,3 +26,6 @@ Route::get('/',[HomeController::class,'home'])->name('home');
 Route::get('/about',[AboutController::class,'about'])->name('about');
 Route::get('/resume',[ResumeController::class,'resume'])->name('resume');
 Route::get('/service',[ServiceController::class,'service'])->name('service');
+Route::get('/blog',[BlogController::class,'blog'])->name('blog');
+Route::get('/projects',[ProjectController::class,'project'])->name('project');
+Route::get('/contact',[ContactController::class,'contact'])->name('contact');
