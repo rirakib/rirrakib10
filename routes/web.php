@@ -32,7 +32,10 @@ Route::get('/blog',[BlogController::class,'blog'])->name('blog');
 Route::get('/projects',[ProjectController::class,'project'])->name('project');
 Route::get('/contact',[ContactController::class,'contact'])->name('contact');
 
-Route::get('rirrakib/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
 Route::get('rirrakib/login',[LoginController::class,'login'])->name('login');
 Route::post('rirrakib/login',[LoginController::class,'login_check'])->name('login_check');
 Route::get('rirrakib/logout',[LoginController::class,'logout'])->name('logout');
+
+Route::group(['middleware'=>['login_check']],function(){
+    Route::get('rirrakib/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
+});
