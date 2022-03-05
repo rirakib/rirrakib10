@@ -38,4 +38,8 @@ Route::get('rirrakib/logout',[LoginController::class,'logout'])->name('logout');
 
 Route::group(['middleware'=>['login_check']],function(){
     Route::get('rirrakib/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
+    Route::get('rirrakib/dashboard/message',[ContactController::class,'index'])->name('contact.index');
 });
+
+
+Route::post('/contact',[ContactController::class,'store'])->name('contact.store');

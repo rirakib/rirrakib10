@@ -19,12 +19,14 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
+    
     <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 
     <!-- Template Main CSS File -->
     <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
@@ -90,6 +92,8 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
     <script src="{{asset('frontend/assets/vendor/purecounter/purecounter.js')}}"></script>
     <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
     <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
