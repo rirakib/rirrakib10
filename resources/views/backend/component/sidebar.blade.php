@@ -32,6 +32,14 @@
             <div class="menu_section">
                 <h3></h3>
                 <ul class="nav side-menu">
+                    <li><a><i class="fa fa-home"></i> Skill <span class="fa fa-chevron-down" style="margin-left:25px"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="{{route('skill.index')}}">Index</a></li>
+                            <li><a href="{{route('skill.create')}}">Create</a></li>
+                        </ul>
+                    </li>
+
+
                     <li><a href="{{route('contact.index')}}">Message</a></li>
                 </ul>
             </div>

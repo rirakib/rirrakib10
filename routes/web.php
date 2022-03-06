@@ -9,7 +9,9 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\SkillController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +41,7 @@ Route::get('rirrakib/logout',[LoginController::class,'logout'])->name('logout');
 Route::group(['middleware'=>['login_check']],function(){
     Route::get('rirrakib/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
     Route::get('rirrakib/dashboard/message',[ContactController::class,'index'])->name('contact.index');
+    Route::resource('/rirrakib/dashboard/skill',SkillController::class,['name'=>'skill']);
 });
 
 

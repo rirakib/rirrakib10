@@ -1,4 +1,5 @@
 @extends('layout.backend')
+@section('admin_title','Message')
 @section('admin_content');
 <div class="container">
     <div class="row">
