@@ -10,6 +10,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SkillController;
+use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -42,6 +43,7 @@ Route::group(['middleware'=>['login_check']],function(){
     Route::get('rirrakib/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
     Route::get('rirrakib/dashboard/message',[ContactController::class,'index'])->name('contact.index');
     Route::resource('/rirrakib/dashboard/skill',SkillController::class,['name'=>'skill']);
+    Route::resource('/rirrakib/dashboard/testimonial',TestimonialController::class,['name'=>'testimonial']);
 });
 
 
