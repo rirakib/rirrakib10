@@ -42,8 +42,9 @@ Route::get('rirrakib/logout',[LoginController::class,'logout'])->name('logout');
 Route::group(['middleware'=>['login_check']],function(){
     Route::get('rirrakib/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
     Route::get('rirrakib/dashboard/message',[ContactController::class,'index'])->name('contact.index');
-    Route::resource('/rirrakib/dashboard/skill',SkillController::class,['name'=>'skill']);
-    Route::resource('/rirrakib/dashboard/testimonial',TestimonialController::class,['name'=>'testimonial']);
+    Route::resource('rirrakib/dashboard/skill',SkillController::class,['name'=>'skill']);
+    Route::resource('rirrakib/dashboard/service',ServiceController::class,['name'=>'services']);
+    Route::resource('rirrakib/dashboard/testimonial',TestimonialController::class,['name'=>'testimonial']);
 });
 
 
